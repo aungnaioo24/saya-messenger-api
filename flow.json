@@ -1,0 +1,89 @@
+{
+    "GET_STARTED": {
+        "message": {
+            "text": "How can I help you?"
+        }
+    },
+    "Hello": {
+        "message":{
+            "text":"Hello"
+        }
+    },
+    "Hey": {
+        "message":{
+            "text":"Hey"
+        }
+    },
+    "button": {
+        "message":{
+            "attachment":{
+                "type":"template",
+                "payload":{
+                    "template_type":"button",
+                    "text":"Try the postback button!",
+                    "buttons":[
+                        {
+                            "type":"postback",
+                            "title":"Click Me",
+                            "payload":"uuid123"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "slide": {
+        "message":{
+            "attachment":{
+                "type":"template",
+                "payload":{
+                    "template_type":"generic",
+                    "elements":[
+                        {
+                            "title":"Welcome!",
+                            "image_url":"https://saya-foundation.org/wp-content/uploads/2021/11/cropped-saya-logo_150x150.png",
+                            "subtitle":"We have the right hat for everyone.",
+                            "default_action": {
+                                "type": "web_url",
+                                "url": "https://saya-foundation.org",
+                                "webview_height_ratio": "tall"
+                            },
+                            "buttons":[
+                                {
+                                    "type":"web_url",
+                                    "url":"https://saya-foundation.org",
+                                    "title":"View Website"
+                                },{
+                                    "type":"postback",
+                                    "title":"Start Chatting",
+                                    "payload":"uuid123"
+                                }
+                            ]
+                        },
+                        {
+                            "title":"Welcome!",
+                            "image_url":"https://saya-foundation.org/wp-content/uploads/2021/11/cropped-saya-logo_150x150.png",
+                            "subtitle":"We have the right hat for everyone.",
+                            "default_action": {
+                                "type": "web_url",
+                                "url": "https://saya-foundation.org",
+                                "webview_height_ratio": "tall"
+                            },
+                            "buttons":[
+                                {
+                                    "type":"web_url",
+                                    "url":"https://saya-foundation.org",
+                                    "title":"View Website"
+                                },{
+                                    "type":"postback",
+                                    "title":"Start Chatting",
+                                    "payload":"uuid123"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
